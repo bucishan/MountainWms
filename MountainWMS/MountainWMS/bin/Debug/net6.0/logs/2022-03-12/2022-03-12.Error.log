@@ -1,0 +1,22 @@
+
+date： 2022/03/12 10:35:11.412
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： An unhandled exception has occurred while executing the request. 
+exception：One or more compilation failures occurred:
+D:\Github\MountainWMS\MountainWMS\Views\Role\Query.cshtml(92,47): error CS1061: “List<Sys_rolemenu>”未包含“ToJsonLong”的定义，并且找不到可接受第一个“List<Sys_rolemenu>”类型参数的可访问扩展方法“ToJsonLong”(是否缺少 using 指令或程序集引用?) 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 245
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 3484
+processname： iisexpress 
+traceid： 00-e6eee9ab8fb3db85759d07e1363b3b4c-48b0513666954824-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------

@@ -1,0 +1,126 @@
+
+date： 2022/03/05 09:07:51.327
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： An unhandled exception has occurred while executing the request. 
+exception：The following sections have been defined but have not been rendered by the page at '/Views/Shared/_LayoutMain.cshtml': 'styles'. To ignore an unrendered section call IgnoreSection("sectionName"). 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 377
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 3172
+processname： iisexpress 
+traceid： 00-cd8b63d2f1a07ca3fae4e71cc482c9e6-109f1ab0cd563a39-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/05 10:25:52.409
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： An unhandled exception has occurred while executing the request. 
+exception：The following sections have been defined but have not been rendered by the page at '/Views/Shared/_LayoutMain.cshtml': 'styles'. To ignore an unrendered section call IgnoreSection("sectionName"). 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 359
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 13752
+processname： iisexpress 
+traceid： 00-5b00ec4291d1fa565c6da3db07ea5bb1-9825f1c8c3601485-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/05 10:26:44.385
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： An unhandled exception has occurred while executing the request. 
+exception：The following sections have been defined but have not been rendered by the page at '/Views/Shared/_LayoutMain.cshtml': 'styles'. To ignore an unrendered section call IgnoreSection("sectionName"). 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 419
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 13752
+processname： iisexpress 
+traceid： 00-40e1c913168b82b2857a00f52b092ea1-36602262f5e75cec-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/05 10:26:49.135
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： An unhandled exception has occurred while executing the request. 
+exception：The following sections have been defined but have not been rendered by the page at '/Views/Shared/_LayoutMain.cshtml': 'styles'. To ignore an unrendered section call IgnoreSection("sectionName"). 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 428
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 13752
+processname： iisexpress 
+traceid： 00-bb62da21ffc7ee9464ad22553b423aa8-e9274e0201e09380-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/05 10:27:00.272
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： An unhandled exception has occurred while executing the request. 
+exception：The following sections have been defined but have not been rendered by the page at '/Views/Shared/_LayoutMain.cshtml': 'styles'. To ignore an unrendered section call IgnoreSection("sectionName"). 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 454
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 13752
+processname： iisexpress 
+traceid： 00-e099936de9cf122fd2a6f9de4e497c5e-292918c93606922d-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/05 10:27:23.586
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： An unhandled exception has occurred while executing the request. 
+exception：The following sections have been defined but have not been rendered by the page at '/Views/Shared/_LayoutMain.cshtml': 'styles'. To ignore an unrendered section call IgnoreSection("sectionName"). 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 514
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 13752
+processname： iisexpress 
+traceid： 00-9711f0a9c6b51144fe27d06d1e25febc-d3e2949f698c4c68-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------

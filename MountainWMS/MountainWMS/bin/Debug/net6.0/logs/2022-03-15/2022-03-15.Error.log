@@ -1,0 +1,22 @@
+
+date： 2022/03/15 13:48:36.529
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：中文提示 : 使用 MergeTable不能有 Take Skip OrderBy PageToList 等操作,你可以在Mergetable之后操作
+English Message : MergeTable  Queryable cannot Take Skip OrderBy PageToList   
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 56
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 14528
+processname： iisexpress 
+traceid： 00-bedb6aad90f01cb577e44236a24e58dc-05257b9777b950bc-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncStateMachineBox`1.ExecutionContextCallback => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------

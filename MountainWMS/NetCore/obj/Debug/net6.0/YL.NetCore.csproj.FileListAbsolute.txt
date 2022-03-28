@@ -1,0 +1,17 @@
+D:\Github\KopSoftWms\src\NetCore\bin\Debug\net6.0\NOTICE.TXT
+D:\Github\KopSoftWms\src\NetCore\bin\Debug\net6.0\NLog.config
+D:\Github\KopSoftWms\src\NetCore\bin\Debug\net6.0\YL.NetCore.deps.json
+D:\Github\KopSoftWms\src\NetCore\bin\Debug\net6.0\YL.NetCore.dll
+D:\Github\KopSoftWms\src\NetCore\bin\Debug\net6.0\ref\YL.NetCore.dll
+D:\Github\KopSoftWms\src\NetCore\bin\Debug\net6.0\YL.NetCore.pdb
+D:\Github\KopSoftWms\src\NetCore\bin\Debug\net6.0\YL.Utils.dll
+D:\Github\KopSoftWms\src\NetCore\bin\Debug\net6.0\YL.Utils.pdb
+D:\Github\KopSoftWms\src\NetCore\obj\Debug\net6.0\YL.NetCore.csproj.AssemblyReference.cache
+D:\Github\KopSoftWms\src\NetCore\obj\Debug\net6.0\YL.NetCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\KopSoftWms\src\NetCore\obj\Debug\net6.0\YL.NetCore.AssemblyInfoInputs.cache
+D:\Github\KopSoftWms\src\NetCore\obj\Debug\net6.0\YL.NetCore.AssemblyInfo.cs
+D:\Github\KopSoftWms\src\NetCore\obj\Debug\net6.0\YL.NetCore.csproj.CoreCompileInputs.cache
+D:\Github\KopSoftWms\src\NetCore\obj\Debug\net6.0\YL.NetCore.csproj.CopyComplete
+D:\Github\KopSoftWms\src\NetCore\obj\Debug\net6.0\YL.NetCore.dll
+D:\Github\KopSoftWms\src\NetCore\obj\Debug\net6.0\ref\YL.NetCore.dll
+D:\Github\KopSoftWms\src\NetCore\obj\Debug\net6.0\YL.NetCore.pdb

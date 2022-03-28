@@ -1,0 +1,105 @@
+
+date： 2022/03/06 10:27:57.380
+level： Debug
+logger： YL.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.3.41
+message： /Menu/AddOrUpdate 
+exception：The given key 'id' was not present in the dictionary. 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： YL.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 84
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 4052
+processname： iisexpress 
+traceid： 00-87aecf428aa363a9f0ee804d2cfbf0a7-88da8d07b97542ce-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------
+
+date： 2022/03/06 10:36:50.451
+level： Debug
+logger： YL.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.3.41
+message： /Menu/AddOrUpdate 
+exception：The given key 'id' was not present in the dictionary. 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： YL.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 195
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 4052
+processname： iisexpress 
+traceid： 00-9d4d33ef3f40695313db8939601d2a0b-7a9a933b0af3707b-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------
+
+date： 2022/03/06 10:36:59.923
+level： Debug
+logger： YL.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.3.41
+message： /Menu/AddOrUpdate 
+exception：The given key 'id' was not present in the dictionary. 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： YL.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 203
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 4052
+processname： iisexpress 
+traceid： 00-2615bb31e04d3dae55886543a1316d9b-a7f9a537c7a16298-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------
+
+date： 2022/03/06 11:54:25.107
+level： Debug
+logger： YL.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.3.41
+message： /Menu/Delete 
+exception：Input string was not in a correct format. 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： YL.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 36
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 13192
+processname： iisexpress 
+traceid： 00-297b375dbe62d26b64a57faf8a2b419b-a7320926d2eff50b-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------
+
+date： 2022/03/06 11:54:37.849
+level： Debug
+logger： YL.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.3.41
+message： /Menu/Delete 
+exception：Input string was not in a correct format. 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： YL.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 56
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 13192
+processname： iisexpress 
+traceid： 00-8ad9f74fbc3f71d7d9ad5a96fecc102c-26668d486888b70c-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------

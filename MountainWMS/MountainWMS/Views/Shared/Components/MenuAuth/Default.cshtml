@@ -1,0 +1,13 @@
+﻿@model List<M.Core.Entity.Sys_auth>
+@{
+    if (Model.Any())
+    {
+        foreach (var item in Model)
+        {
+            <button id="btn_@item.AuthType" v-on:click="@item.AuthType" aid="@item.AuthId" type="button" class="btn btn-default">
+                <span class="@item.AuthIcon" aria-hidden="true"></span> @item.AuthName
+            </button>
+        }
+    }
+}
+

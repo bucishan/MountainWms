@@ -1,0 +1,14 @@
+D:\Github\KopSoftWms\src\YL.Utils\bin\Debug\net6.0\NOTICE.TXT
+D:\Github\KopSoftWms\src\YL.Utils\bin\Debug\net6.0\NLog.config
+D:\Github\KopSoftWms\src\YL.Utils\bin\Debug\net6.0\YL.Utils.deps.json
+D:\Github\KopSoftWms\src\YL.Utils\bin\Debug\net6.0\YL.Utils.dll
+D:\Github\KopSoftWms\src\YL.Utils\bin\Debug\net6.0\ref\YL.Utils.dll
+D:\Github\KopSoftWms\src\YL.Utils\bin\Debug\net6.0\YL.Utils.pdb
+D:\Github\KopSoftWms\src\YL.Utils\obj\Debug\net6.0\YL.Utils.csproj.AssemblyReference.cache
+D:\Github\KopSoftWms\src\YL.Utils\obj\Debug\net6.0\YL.Utils.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\KopSoftWms\src\YL.Utils\obj\Debug\net6.0\YL.Utils.AssemblyInfoInputs.cache
+D:\Github\KopSoftWms\src\YL.Utils\obj\Debug\net6.0\YL.Utils.AssemblyInfo.cs
+D:\Github\KopSoftWms\src\YL.Utils\obj\Debug\net6.0\YL.Utils.csproj.CoreCompileInputs.cache
+D:\Github\KopSoftWms\src\YL.Utils\obj\Debug\net6.0\YL.Utils.dll
+D:\Github\KopSoftWms\src\YL.Utils\obj\Debug\net6.0\ref\YL.Utils.dll
+D:\Github\KopSoftWms\src\YL.Utils\obj\Debug\net6.0\YL.Utils.pdb

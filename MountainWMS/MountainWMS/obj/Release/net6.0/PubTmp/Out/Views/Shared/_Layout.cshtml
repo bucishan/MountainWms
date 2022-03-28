@@ -1,0 +1,72 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="keywords" content="@ViewBag.keywords">
+    <meta name="description" content="@ViewBag.description">
+    <link rel="Bookmark" href="/favicon.ico">
+    <link rel="Shortcut Icon" href="/favicon.ico" />
+    <title>@ViewBag.title</title>
+    @await Html.PartialAsync("_Css")
+    @RenderSection("styles", false)
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        @await Html.PartialAsync("_Header")
+
+        <!-- 左侧 侧边栏导航 -->
+        @await Html.PartialAsync("_Sidebar", "menu")
+
+        @*@await Component.InvokeAsync("Menu")*@
+
+        <!-- 主要数据内容-->
+        <div id="app" v-cloak class="content-wrapper partial_view">
+            @RenderBody()
+        </div>
+
+        <!-- 底部页脚 -->
+        @await Html.PartialAsync("_Footer")
+
+        <!-- 右侧工具栏 -->
+        @await Html.PartialAsync("_Aside")
+    </div>
+    @await Html.PartialAsync("_Js")
+    @RenderSection("scripts", false)
+
+    <script type="text/javascript">
+        function userInfo() {
+            yui.layershow("个人信息", "/User/Info", 600, 400);
+        };
+        function updatePwd() {
+            yui.layershow("修改密码", "/User/UpdatePwd", 600, 400);
+        };
+        function setScroll(selector) {
+            $(selector).slimScroll({
+                //width: '300px', //容器宽度,默认无
+                height: '100vh', //容器高度,默认250px
+                //size: '10px', //滚动条宽度,默认7px
+                //position: 'left', //滚动条位置,可选值:left,right,默认right
+                color: '#ffcc00', //滚动条颜色,默认#000000
+                //alwaysVisible: true, //是否禁用隐藏滚动条,默认false
+                //distance: '20px', //距离边框距离,位置由position参数决定,默认1px
+                //start: $('#child_image_element'), //滚动条初始位置,可选值top,bottom,$(selector)--内容元素位置,默认top
+                //railVisible: true, //滚动条背景轨迹,默认false
+                //railColor: '#222', //滚动条背景轨迹颜色,默认#333333
+                //railOpacity: 0.3, //滚动条背景轨迹透明度,默认0.2
+                wheelStep: 10, //滚动条滚动值, 默认20
+                //allowPageScroll: false, //滚动条滚动到顶部或底部时是否允许页面滚动,默认false
+                disableFadeOut: false //是否禁用鼠标在内容处一定时间不动隐藏滚动条,当设置alwaysVisible为true时该参数无效,默认false
+            });
+        }
+
+            //setScroll('.content-wrapper');
+            //$('.content-wrapper').resize(setScroll);
+
+
+    </script>
+</body>
+</html>

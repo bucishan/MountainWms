@@ -1,0 +1,420 @@
+
+date： 2022/03/24 09:46:15.737
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Application started. Press Ctrl+C to shut down. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 1
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 14192
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 09:46:16.011
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Hosting environment: Production 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 2
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 14192
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 09:46:16.170
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Content root path: D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 3
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 14192
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 10:19:00.351
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Application is shutting down... 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+callsite-linenumber： 0
+counter： 4
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 14192
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_1 => ConsoleLifetime.OnApplicationStopping
+-----------------------------------------------------------
+
+date： 2022/03/24 10:48:03.941
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Application started. Press Ctrl+C to shut down. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 1
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 6512
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 10:48:04.186
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Hosting environment: Production 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 2
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 6512
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 10:48:04.336
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Content root path: D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 3
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 6512
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 11:09:01.396
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Application is shutting down... 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+callsite-linenumber： 0
+counter： 4
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 6512
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_1 => ConsoleLifetime.OnApplicationStopping
+-----------------------------------------------------------
+
+date： 2022/03/24 12:00:09.240
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Application started. Press Ctrl+C to shut down. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 1
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 12696
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 12:00:09.483
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Hosting environment: Production 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 2
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 12696
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 12:00:09.642
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Content root path: D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 3
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 12696
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 12:21:07.534
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Application is shutting down... 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+callsite-linenumber： 0
+counter： 4
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 12696
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_1 => ConsoleLifetime.OnApplicationStopping
+-----------------------------------------------------------
+
+date： 2022/03/24 15:22:37.784
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Application started. Press Ctrl+C to shut down. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 1
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 15040
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 15:22:38.298
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Hosting environment: Production 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 2
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 15040
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 15:22:38.459
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Content root path: D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 3
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 15040
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 15:53:27.539
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Application is shutting down... 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+callsite-linenumber： 0
+counter： 4
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 15040
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_1 => ConsoleLifetime.OnApplicationStopping
+-----------------------------------------------------------
+
+date： 2022/03/24 16:55:22.208
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Application started. Press Ctrl+C to shut down. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 1
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 12284
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 16:55:22.443
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Hosting environment: Production 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 2
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 12284
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 16:55:22.590
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Content root path: D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted
+callsite-linenumber： 0
+counter： 3
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 12284
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_0 => ConsoleLifetime.OnApplicationStarted
+-----------------------------------------------------------
+
+date： 2022/03/24 16:56:28.654
+level： Info
+logger： Microsoft.Hosting.Lifetime
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Application is shutting down... 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\ 
+callsite： Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStopping
+callsite-linenumber： 0
+counter： 4
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish 
+processid： 12284
+processname： w3wp 
+traceid：  
+specialfolder：  
+stacktrace: CancellationTokenSource.Invoke => <>c.<WaitForStartAsync>b__19_1 => ConsoleLifetime.OnApplicationStopping
+-----------------------------------------------------------

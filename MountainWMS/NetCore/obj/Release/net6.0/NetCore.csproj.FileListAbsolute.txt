@@ -1,0 +1,17 @@
+D:\Github\MountainWMS\NetCore\bin\Release\net6.0\NOTICE.TXT
+D:\Github\MountainWMS\NetCore\bin\Release\net6.0\NLog.config
+D:\Github\MountainWMS\NetCore\bin\Release\net6.0\M.NetCore.deps.json
+D:\Github\MountainWMS\NetCore\bin\Release\net6.0\M.NetCore.dll
+D:\Github\MountainWMS\NetCore\bin\Release\net6.0\ref\M.NetCore.dll
+D:\Github\MountainWMS\NetCore\bin\Release\net6.0\M.NetCore.pdb
+D:\Github\MountainWMS\NetCore\bin\Release\net6.0\M.Utils.dll
+D:\Github\MountainWMS\NetCore\bin\Release\net6.0\M.Utils.pdb
+D:\Github\MountainWMS\NetCore\obj\Release\net6.0\NetCore.csproj.AssemblyReference.cache
+D:\Github\MountainWMS\NetCore\obj\Release\net6.0\NetCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\MountainWMS\NetCore\obj\Release\net6.0\NetCore.AssemblyInfoInputs.cache
+D:\Github\MountainWMS\NetCore\obj\Release\net6.0\NetCore.AssemblyInfo.cs
+D:\Github\MountainWMS\NetCore\obj\Release\net6.0\NetCore.csproj.CoreCompileInputs.cache
+D:\Github\MountainWMS\NetCore\obj\Release\net6.0\NetCore.csproj.CopyComplete
+D:\Github\MountainWMS\NetCore\obj\Release\net6.0\M.NetCore.dll
+D:\Github\MountainWMS\NetCore\obj\Release\net6.0\ref\M.NetCore.dll
+D:\Github\MountainWMS\NetCore\obj\Release\net6.0\M.NetCore.pdb

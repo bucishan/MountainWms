@@ -1,0 +1,170 @@
+﻿@{
+    Layout = "_LayoutView";
+}
+@section scripts{
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                auth: ['add', 'edit', 'delete'],
+                datemin: '',
+                datemax: ''
+            },
+            mounted: function () {
+                var _self = this;
+                _self.$nextTick(function () {
+                    //_self.$refs.Role.parentNode.parentNode.classList.add("active");
+                    //_self.$refs.Role.classList.add("active");
+
+                    //_self.datemin = _self.getCurrentMonthFirst();
+                    _self.datemax = _self.getCurrentMonthLast();
+                    $('#datemin').datetimepicker({
+                        format: 'yyyy-mm-dd',
+                        minView: 2,
+                        autoclose: true,
+                        language: "zh-CN"
+                    });
+                    $('#datemax').datetimepicker({
+                        format: 'yyyy-mm-dd',
+                        minView: 2,
+                        autoclose: true,
+                        language: "zh-CN"
+                    });
+                    setTimeout(function () {
+                        _self.loadL();
+                        $("div[class='pull-right search']")[0].children[0].setAttribute("placeholder", "权限名称");
+                    }, 500);
+                });
+            },
+            methods: {
+                loadL: function () {
+                    _self = this;
+                    var obj = [{
+                        checkbox: true,             //是否显示复选框
+                        visible: true
+                    }, {
+                        field: 'AuthId',
+                        title: 'Id',
+                        visible: false
+                    }, {
+                        field: 'AuthName',
+                        title: '权限名称',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'AuthIcon',
+                        title: '权限图标',
+                        align: 'center',
+                        formatter: function (value, row, index) {
+                            if (value != '') {
+                                return '<i class="' + value + '"></i>';
+                            } else {
+                                return '';
+                            }
+                        }
+                    }, {
+                        field: 'AuthType',
+                        title: '绑定函数',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'Status',
+                        title: '锁定状态',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            switch (value) {
+                                case 0:
+                                    return '<span class="label label-danger radius">关闭</span>';
+                                case 1:
+                                    return '<span class="label label-success radius">开启</span>';
+                                default:
+                                    return '<span class="label label-warning radius">-</span>';
+                            }
+                        }
+                    }, {
+                        field: 'Sort',
+                        title: '排序值',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'Remark',
+                        align: 'center',
+                        title: '备注'
+                    }, {
+                        field: 'CName',
+                        title: '创建人',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'CreateDate',
+                        align: 'center',
+                        title: '创建时间',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }, {
+                        field: 'UName',
+                        align: 'center',
+                        title: '修改人',
+                        sortable: true
+                    }, {
+                        field: 'ModifiedDate',
+                        title: '修改时间',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }];
+                    yui.table("bootstraptable", "/Auth/List", obj, "POST", "AuthId");
+                },
+                searchL: function () {
+                    $("#bootstraptable").bootstrapTable('refresh');
+                },
+                showL: function () {
+                    yui.layershow("添加操作权限", "/Auth/Add", 600, 550);
+                },
+                editL: function () {
+                    var arr = $("#bootstraptable").bootstrapTable('getSelections');
+                    if (arr.length > 0) {
+                        var index = layer.confirm("您确定要修改吗？", { btn: ["确定", "取消"] }, function () {
+                            layer.close(index);
+                            var id = arr[0].AuthId;
+                            yui.layershow("修改操作", "/Auth/Add?id=" + id, 600, 550);
+                        }, function () {
+
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                deleteL: function () {
+                    _self = this;
+                    var arr = $("#bootstraptable").bootstrapTable('getSelections');
+                    if (arr.length > 0) {
+                        var index = layer.confirm("您确定要删除吗？", { btn: ["确定", "取消"] }, function () {
+                            var id = arr[0].AuthId;
+                            yui.$axiosget('/Auth/Delete?id=' + id)
+                                .then(function (response) {
+                                    if (response.data.Item1) {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 1 });
+                                        _self.searchL();
+                                    } else {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 5 });
+                                    }
+                                })
+                                .catch(function (error) {
+                                    layer.msg(error.message, { icon: 5 });
+                                });
+                            layer.close(index);
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                }
+            }
+        });
+    </script>
+}

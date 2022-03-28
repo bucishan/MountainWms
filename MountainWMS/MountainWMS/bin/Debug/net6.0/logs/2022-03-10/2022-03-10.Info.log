@@ -1,0 +1,777 @@
+
+date： 2022/03/10 16:59:44.104
+level： Info
+logger： Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed action KopSoftWms.Controllers.MenuController.List (MountainWMS) in 139.2457ms 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.MvcCoreLoggerExtensions.ExecutedAction
+callsite-linenumber： 0
+counter： 4461
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-c70a21b8d66647f8622c557c01bf86d9-4f519e04aed16023-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <<InvokeAsync>g__Logged|17_1>d.MoveNext => MvcCoreLoggerExtensions.ExecutedAction
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:44.235
+level： Info
+logger： Microsoft.AspNetCore.Routing.EndpointMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed endpoint 'KopSoftWms.Controllers.MenuController.List (MountainWMS)' 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke
+callsite-linenumber： 0
+counter： 4462
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-c70a21b8d66647f8622c557c01bf86d9-4f519e04aed16023-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__3.MoveNext => EndpointMiddleware.Invoke
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:44.360
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Request finished HTTP/1.1 POST http://localhost:30682/Menu/List application/x-www-form-urlencoded;+charset=UTF-8 73 - 200 - text/plain;+charset=utf-8 776.2507ms 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 4463
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-c70a21b8d66647f8622c557c01bf86d9-4f519e04aed16023-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:45.849
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Request starting HTTP/1.1 GET http://localhost:30682/Role?_=1646901779358 - - 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestStarting
+callsite-linenumber： 0
+counter： 4464
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-949ff3e5366eb70f5de5fc2c410d14ca-6084ca6e39eba734-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: HostingApplication.CreateContext => HostingApplicationDiagnostics.BeginRequest => HostingApplicationDiagnostics.LogRequestStarting
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:45.977
+level： Info
+logger： Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： No cached response available for this request. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.TryServeFromCacheAsync
+callsite-linenumber： 0
+counter： 4465
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-949ff3e5366eb70f5de5fc2c410d14ca-6084ca6e39eba734-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__10.MoveNext => ResponseCachingMiddleware.TryServeFromCacheAsync
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:46.094
+level： Info
+logger： Microsoft.AspNetCore.Routing.EndpointMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executing endpoint 'KopSoftWms.Controllers.RoleController.Index (MountainWMS)' 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke
+callsite-linenumber： 0
+counter： 4466
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-949ff3e5366eb70f5de5fc2c410d14ca-6084ca6e39eba734-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__3.MoveNext => EndpointMiddleware.Invoke
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:46.221
+level： Info
+logger： Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Route matched with {action = "Index", controller = "Role"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller KopSoftWms.Controllers.RoleController (MountainWMS). 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.MvcCoreLoggerExtensions.ExecutingAction
+callsite-linenumber： 0
+counter： 4467
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-949ff3e5366eb70f5de5fc2c410d14ca-6084ca6e39eba734-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <<InvokeAsync>g__Logged|17_1>d.MoveNext => MvcCoreLoggerExtensions.ExecutingAction
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:46.506
+level： Info
+logger： Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executing ViewResult, running view Index. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.FindView
+callsite-linenumber： 0
+counter： 4468
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-949ff3e5366eb70f5de5fc2c410d14ca-6084ca6e39eba734-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <ExecuteAsync>d__7.MoveNext => ViewResultExecutor.FindView
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:46.637
+level： Info
+logger： Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed ViewResult - view Index executed in 295.5155ms. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync
+callsite-linenumber： 0
+counter： 4469
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-949ff3e5366eb70f5de5fc2c410d14ca-6084ca6e39eba734-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <ExecuteResultAsync>d__26.MoveNext => ViewResultExecutor.ExecuteAsync
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:46.760
+level： Info
+logger： Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed action KopSoftWms.Controllers.RoleController.Index (MountainWMS) in 419.16ms 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.MvcCoreLoggerExtensions.ExecutedAction
+callsite-linenumber： 0
+counter： 4470
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-949ff3e5366eb70f5de5fc2c410d14ca-6084ca6e39eba734-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <<InvokeAsync>g__Logged|17_1>d.MoveNext => MvcCoreLoggerExtensions.ExecutedAction
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:46.908
+level： Info
+logger： Microsoft.AspNetCore.Routing.EndpointMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed endpoint 'KopSoftWms.Controllers.RoleController.Index (MountainWMS)' 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke
+callsite-linenumber： 0
+counter： 4471
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-949ff3e5366eb70f5de5fc2c410d14ca-6084ca6e39eba734-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__3.MoveNext => EndpointMiddleware.Invoke
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:47.029
+level： Info
+logger： Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： The response could not be cached for this request. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.FinalizeCacheBody
+callsite-linenumber： 0
+counter： 4472
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-949ff3e5366eb70f5de5fc2c410d14ca-6084ca6e39eba734-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__10.MoveNext => ResponseCachingMiddleware.FinalizeCacheBody
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:47.161
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Request finished HTTP/1.1 GET http://localhost:30682/Role?_=1646901779358 - - - 200 - text/html;+charset=utf-8 1312.0527ms 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 4473
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-949ff3e5366eb70f5de5fc2c410d14ca-6084ca6e39eba734-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:47.800
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Request starting HTTP/1.1 POST http://localhost:30682/Role/List application/x-www-form-urlencoded;+charset=UTF-8 80 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestStarting
+callsite-linenumber： 0
+counter： 4474
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-338893f9c7b92bcf17503672217a64e7-86e2231b4619393c-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: HostingApplication.CreateContext => HostingApplicationDiagnostics.BeginRequest => HostingApplicationDiagnostics.LogRequestStarting
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:47.923
+level： Info
+logger： Microsoft.AspNetCore.Routing.EndpointMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executing endpoint 'KopSoftWms.Controllers.RoleController.List (MountainWMS)' 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke
+callsite-linenumber： 0
+counter： 4475
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-338893f9c7b92bcf17503672217a64e7-86e2231b4619393c-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__3.MoveNext => EndpointMiddleware.Invoke
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:48.045
+level： Info
+logger： Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Route matched with {action = "List", controller = "Role"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult List(BootstrapParams) on controller KopSoftWms.Controllers.RoleController (MountainWMS). 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.MvcCoreLoggerExtensions.ExecutingAction
+callsite-linenumber： 0
+counter： 4476
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-338893f9c7b92bcf17503672217a64e7-86e2231b4619393c-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <<InvokeAsync>g__Logged|17_1>d.MoveNext => MvcCoreLoggerExtensions.ExecutingAction
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:48.261
+level： Info
+logger： Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executing ContentResult with HTTP Response ContentType of text/plain; charset=utf-8 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor.ExecuteAsync
+callsite-linenumber： 0
+counter： 4477
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-338893f9c7b92bcf17503672217a64e7-86e2231b4619393c-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ResourceInvoker.InvokeNextResultFilterAsync => ResourceInvoker.ResultNext => ContentResultExecutor.ExecuteAsync
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:48.390
+level： Info
+logger： Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed action KopSoftWms.Controllers.RoleController.List (MountainWMS) in 219.7413ms 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.MvcCoreLoggerExtensions.ExecutedAction
+callsite-linenumber： 0
+counter： 4478
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-338893f9c7b92bcf17503672217a64e7-86e2231b4619393c-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <<InvokeAsync>g__Logged|17_1>d.MoveNext => MvcCoreLoggerExtensions.ExecutedAction
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:48.513
+level： Info
+logger： Microsoft.AspNetCore.Routing.EndpointMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed endpoint 'KopSoftWms.Controllers.RoleController.List (MountainWMS)' 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke
+callsite-linenumber： 0
+counter： 4479
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-338893f9c7b92bcf17503672217a64e7-86e2231b4619393c-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__3.MoveNext => EndpointMiddleware.Invoke
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:48.641
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Request finished HTTP/1.1 POST http://localhost:30682/Role/List application/x-www-form-urlencoded;+charset=UTF-8 80 - 200 - text/plain;+charset=utf-8 840.7359ms 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 4480
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-338893f9c7b92bcf17503672217a64e7-86e2231b4619393c-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:51.464
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Request starting HTTP/1.1 GET http://localhost:30682/StockOut?_=1646901779359 - - 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestStarting
+callsite-linenumber： 0
+counter： 4481
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-2cc20bc20856b702856596b2a92e004f-5e59c7e50e054e1f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: HostingApplication.CreateContext => HostingApplicationDiagnostics.BeginRequest => HostingApplicationDiagnostics.LogRequestStarting
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:51.596
+level： Info
+logger： Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： No cached response available for this request. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.TryServeFromCacheAsync
+callsite-linenumber： 0
+counter： 4482
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-2cc20bc20856b702856596b2a92e004f-5e59c7e50e054e1f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__10.MoveNext => ResponseCachingMiddleware.TryServeFromCacheAsync
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:51.714
+level： Info
+logger： Microsoft.AspNetCore.Routing.EndpointMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executing endpoint 'KopSoftWms.Controllers.StockOutController.Index (MountainWMS)' 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke
+callsite-linenumber： 0
+counter： 4483
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-2cc20bc20856b702856596b2a92e004f-5e59c7e50e054e1f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__3.MoveNext => EndpointMiddleware.Invoke
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:51.839
+level： Info
+logger： Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Route matched with {action = "Index", controller = "StockOut"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller KopSoftWms.Controllers.StockOutController (MountainWMS). 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.MvcCoreLoggerExtensions.ExecutingAction
+callsite-linenumber： 0
+counter： 4484
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-2cc20bc20856b702856596b2a92e004f-5e59c7e50e054e1f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <<InvokeAsync>g__Logged|17_1>d.MoveNext => MvcCoreLoggerExtensions.ExecutingAction
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:51.958
+level： Info
+logger： Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executing ViewResult, running view Index. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.FindView
+callsite-linenumber： 0
+counter： 4485
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-2cc20bc20856b702856596b2a92e004f-5e59c7e50e054e1f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <ExecuteAsync>d__7.MoveNext => ViewResultExecutor.FindView
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:52.084
+level： Info
+logger： Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed ViewResult - view Index executed in 126.0232ms. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync
+callsite-linenumber： 0
+counter： 4486
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-2cc20bc20856b702856596b2a92e004f-5e59c7e50e054e1f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <ExecuteResultAsync>d__26.MoveNext => ViewResultExecutor.ExecuteAsync
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:52.203
+level： Info
+logger： Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed action KopSoftWms.Controllers.StockOutController.Index (MountainWMS) in 246.2717ms 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.MvcCoreLoggerExtensions.ExecutedAction
+callsite-linenumber： 0
+counter： 4487
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-2cc20bc20856b702856596b2a92e004f-5e59c7e50e054e1f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <<InvokeAsync>g__Logged|17_1>d.MoveNext => MvcCoreLoggerExtensions.ExecutedAction
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:52.330
+level： Info
+logger： Microsoft.AspNetCore.Routing.EndpointMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed endpoint 'KopSoftWms.Controllers.StockOutController.Index (MountainWMS)' 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke
+callsite-linenumber： 0
+counter： 4488
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-2cc20bc20856b702856596b2a92e004f-5e59c7e50e054e1f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__3.MoveNext => EndpointMiddleware.Invoke
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:52.453
+level： Info
+logger： Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： The response could not be cached for this request. 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.FinalizeCacheBody
+callsite-linenumber： 0
+counter： 4489
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-2cc20bc20856b702856596b2a92e004f-5e59c7e50e054e1f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__10.MoveNext => ResponseCachingMiddleware.FinalizeCacheBody
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:52.571
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Request finished HTTP/1.1 GET http://localhost:30682/StockOut?_=1646901779359 - - - 200 - text/html;+charset=utf-8 1107.0051ms 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 4490
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-2cc20bc20856b702856596b2a92e004f-5e59c7e50e054e1f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:53.180
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Request starting HTTP/1.1 POST http://localhost:30682/StockOut/List application/x-www-form-urlencoded;+charset=UTF-8 120 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestStarting
+callsite-linenumber： 0
+counter： 4491
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-5316f096edb073652892b6e7efeee0fa-f6ccf607bbeb9ce6-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: HostingApplication.CreateContext => HostingApplicationDiagnostics.BeginRequest => HostingApplicationDiagnostics.LogRequestStarting
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:53.302
+level： Info
+logger： Microsoft.AspNetCore.Routing.EndpointMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executing endpoint 'KopSoftWms.Controllers.StockOutController.List (MountainWMS)' 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke
+callsite-linenumber： 0
+counter： 4492
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-5316f096edb073652892b6e7efeee0fa-f6ccf607bbeb9ce6-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__3.MoveNext => EndpointMiddleware.Invoke
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:53.422
+level： Info
+logger： Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Route matched with {action = "List", controller = "StockOut"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult List(StockOutBootstrapParams) on controller KopSoftWms.Controllers.StockOutController (MountainWMS). 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.MvcCoreLoggerExtensions.ExecutingAction
+callsite-linenumber： 0
+counter： 4493
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-5316f096edb073652892b6e7efeee0fa-f6ccf607bbeb9ce6-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <<InvokeAsync>g__Logged|17_1>d.MoveNext => MvcCoreLoggerExtensions.ExecutingAction
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:53.548
+level： Info
+logger： Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executing ContentResult with HTTP Response ContentType of text/plain; charset=utf-8 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.Infrastructure.ContentResultExecutor.ExecuteAsync
+callsite-linenumber： 0
+counter： 4494
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-5316f096edb073652892b6e7efeee0fa-f6ccf607bbeb9ce6-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ResourceInvoker.InvokeNextResultFilterAsync => ResourceInvoker.ResultNext => ContentResultExecutor.ExecuteAsync
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:53.667
+level： Info
+logger： Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed action KopSoftWms.Controllers.StockOutController.List (MountainWMS) in 123.0285ms 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Mvc.MvcCoreLoggerExtensions.ExecutedAction
+callsite-linenumber： 0
+counter： 4495
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-5316f096edb073652892b6e7efeee0fa-f6ccf607bbeb9ce6-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <<InvokeAsync>g__Logged|17_1>d.MoveNext => MvcCoreLoggerExtensions.ExecutedAction
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:53.794
+level： Info
+logger： Microsoft.AspNetCore.Routing.EndpointMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Executed endpoint 'KopSoftWms.Controllers.StockOutController.List (MountainWMS)' 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke
+callsite-linenumber： 0
+counter： 4496
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-5316f096edb073652892b6e7efeee0fa-f6ccf607bbeb9ce6-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__3.MoveNext => EndpointMiddleware.Invoke
+-----------------------------------------------------------
+
+date： 2022/03/10 16:59:53.911
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.1.118
+message： Request finished HTTP/1.1 POST http://localhost:30682/StockOut/List application/x-www-form-urlencoded;+charset=UTF-8 120 - 200 - text/plain;+charset=utf-8 731.0420ms 
+exception： 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 4497
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1060
+processname： iisexpress 
+traceid： 00-5316f096edb073652892b6e7efeee0fa-f6ccf607bbeb9ce6-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------

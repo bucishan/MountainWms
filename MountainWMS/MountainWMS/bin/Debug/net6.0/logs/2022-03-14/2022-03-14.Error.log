@@ -1,0 +1,357 @@
+
+date： 2022/03/14 13:54:05.601
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 25
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 12648
+processname： iisexpress 
+traceid： 00-8e887641fb80dffa2d530bce873cacd8-9e2f7a155e942f86-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 13:54:10.625
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 37
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 12648
+processname： iisexpress 
+traceid： 00-5b27942fbf02582d5eb55a9be45fa4bf-71c09cfa48808a08-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 13:54:20.251
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 63
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 12648
+processname： iisexpress 
+traceid： 00-4a8a66ec414365d7682179b62fc9aef9-86008f044278417b-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 13:56:20.838
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：Object reference not set to an instance of an object. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 167
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 12648
+processname： iisexpress 
+traceid： 00-762daa67a1f7eedffe5cf29baa3006e4-e6a1d66f5ec969ff-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:03:57.899
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 79
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 9460
+processname： iisexpress 
+traceid： 00-8691aba362c392a2c0ff8c96f195b37b-542075de506df376-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:07:21.034
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 88
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 9460
+processname： iisexpress 
+traceid： 00-bc191ed10bc0f8c086d1733a5cd8793a-472b5fc985421dcf-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:07:24.318
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 97
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 9460
+processname： iisexpress 
+traceid： 00-3b6608dfd4d4b5f8c2aadd8d34bbdd79-dad674c8e3898008-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:07:30.524
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 116
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 9460
+processname： iisexpress 
+traceid： 00-f0da2ef787a94f4afe00414df94f3a74-8d5860abff5cec74-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:11:14.976
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 125
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 9460
+processname： iisexpress 
+traceid： 00-9118f0ceb1395fd0de88b14e52ee7d2b-5b446c93efcb87fd-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:11:29.481
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 134
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 9460
+processname： iisexpress 
+traceid： 00-fe1e75a46437b2a911d97cb5cab0f69b-18ea39878df27c80-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:11:31.986
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 143
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 9460
+processname： iisexpress 
+traceid： 00-cc4e3f054c4c8d7f183b0cbfdb71cbc0-fa7f4796ea0cd766-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:11:45.337
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 152
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 9460
+processname： iisexpress 
+traceid： 00-b344eba6a366c0a55dc528a536137cff-e5a35f5136d0d355-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:15:24.411
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 161
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 9460
+processname： iisexpress 
+traceid： 00-bc234acc5950c04d25912c2dc988b80e-e637c36102219f74-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:15:40.025
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 190
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 9460
+processname： iisexpress 
+traceid： 00-0e06637b82e74c77f87e973ae2f020af-f14bff42e27c61ab-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:17:37.769
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 22
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 7260
+processname： iisexpress 
+traceid： 00-28b7812141ebcabe1f8c9c4dbb9c209d-33c093d8bd4ca8d6-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:24:48.035
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 22
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 6384
+processname： iisexpress 
+traceid： 00-5e1a72634797edf1c6bb040b2d7993e8-0d3dfd63061b77df-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/14 14:26:36.430
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：A view component named 'MenuAuth' could not be found. A view component must be a public non-abstract class, not contain any generic parameters, and either be decorated with 'ViewComponentAttribute' or have a class name ending with the 'ViewComponent' suffix. A view component must not be decorated with 'NonViewComponentAttribute'. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 31
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 6384
+processname： iisexpress 
+traceid： 00-c258b05109c44f2b31486a60f99f0487-182e384ac749af74-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------

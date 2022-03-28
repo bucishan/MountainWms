@@ -1,0 +1,147 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="keywords" content="@Html.Raw(@ViewBag.keywords)">
+    <meta name="description" content="@Html.Raw(@ViewBag.description)">
+    <title>@ViewBag.title</title>
+    <link rel="stylesheet" href="~/css/bootstrap.table.min.css" />
+    <link href="~/lib/adminlte/css/AdminLTE.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition login-page">
+    <div id="app" v-cloak>
+        <div class="login-box">
+            <div class="login-logo">
+                <a href="@ViewBag.companylink" target="_blank"><b>@ViewBag.softname</b></a>
+                <p>@ViewBag.softtype</p>
+            </div>
+            <div class="login-box-body">
+                <p class="login-box-msg">登入您的账户进行管理</p>
+                <form onsubmit="return false" method="post">
+                    <div class="form-group has-feedback">
+                        <input type="text" v-model="UserNickname" id="nickname" autofocus class="form-control" placeholder="用户名">
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="password" v-model="Pwd" class="form-control" placeholder="密码" autocomplete="off">
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <div class="checkbox icheck">
+                                <label style="padding-left: 20px;">
+                                    <input type="checkbox"> 记住账户
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <button type="submit" :disabled="disabled" class="btn btn-primary btn-block btn-flat" v-bind:class="{ 'btn-grey': isSelected}" v-on:click="checkLogin">{{submit}}</button>
+                        </div>
+                    </div>
+                </form>
+                <strong>&copy;2022<a href="@ViewBag.companylink" target="_blank"> @ViewBag.company</a></strong>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/3.0/jquery.min.js"></script>
+    <script src="~/lib/layer/layer.js"></script>
+    <script src="~/js/vqypa.min.js"></script>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                UserNickname: '',
+                Pwd: '',
+                disabled: false,
+                submit: "登录",
+                reset: "取消",
+                isSelected: false,
+                copyYear: new Date().getFullYear()
+            },
+            methods: {
+                checkLogin: function () {
+                    var _self = this;
+                    _self.disabled = true;
+                    _self.isSelected = true;
+                    //es5写法
+                    if (_self.UserNickname.length <= 0) {
+                        layer.msg('用户名不能为空', { icon: 5 });
+                        _self.disabled = false;
+                        _self.isSelected = false;
+                        return false;
+                    }
+                    if (_self.Pwd.length <= 0) {
+                        layer.msg('密码不能为空', { icon: 5 });
+                        _self.disabled = false;
+                        _self.isSelected = false;
+                        return false;
+                    }
+                    var index = layer.load(1, {
+                        shade: [0.1, '#fff']
+                    });
+
+                    yui.$axiospost('/Login/CheckLoginAsync', {
+                        UserNickname: _self.UserNickname,
+                        Pwd: _self.Pwd
+                    })
+                        .then(function (response) {
+                            _self.disabled = false;
+                            _self.isSelected = false;
+                            if (response.data.Item1) {
+                                _self.submit = "登录中";
+                                location.href = "/";
+                            } else {
+                                layer.close(index);
+                                layer.msg(response.data.Item2 || errorMsg, { icon: 5, time: 6000 });
+                            }
+                        })
+                        .catch(function (error) {
+                            _self.disabled = false;
+                            _self.isSelected = false;
+                            layer.close(index);
+                        });
+                }
+            },
+            mounted() {
+                setTimeout(function () {
+                    yui.getDomById("nickname").focus();
+                }, 500);
+                //_self.$nextTick(function () {
+                //    yui.getDomById("test").focus();
+                //});
+                //    if (typeof (EventSource) !== 'undefined') {
+                //        var eventSource = new EventSource(`http://${location.host}/Home/ServerSendMsg`);
+                //        eventSource.onopen = function () {
+                //            //console.log('连接打开。。。');
+                //        }
+                //        eventSource.onerror = function (e) {
+                //            //console.log(e);
+                //        }
+                //        eventSource.onmessage = function (event) {
+                //            console.log(event.data);
+                //            var origin = event.origin
+                //            var last = event.lastEventId
+                //        }
+                //        //eventSource.addEventListener('message', function (event) {
+                //        //    var origin = event.origin;
+                //        //    var lastEventId = event.lastEventId;
+                //        //    console.log(event.data, 2);
+                //        //}, false);
+                //    } else {
+                //        console.info('浏览器不支持EventSource')
+                //    }
+            }
+        });
+    </script>
+</body>
+</html>

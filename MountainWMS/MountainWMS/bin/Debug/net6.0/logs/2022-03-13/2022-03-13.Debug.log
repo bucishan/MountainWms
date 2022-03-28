@@ -1,0 +1,85 @@
+
+date： 2022/03/13 14:35:08.615
+level： Debug
+logger： M.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.3.41
+message： /Menu/AddOrUpdateDetail 
+exception：Property set method not found. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： M.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 324
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 5664
+processname： iisexpress 
+traceid： 00-1b86062f99663850ebaf5f5f1f6144e0-833678ae7337debd-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------
+
+date： 2022/03/13 14:37:56.514
+level： Debug
+logger： M.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.3.41
+message： /Menu/AddOrUpdateDetail 
+exception：Property set method not found. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： M.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 61
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 1792
+processname： iisexpress 
+traceid： 00-98b9185e88f70e2997529761c33e9597-f19db01bec691f5e-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------
+
+date： 2022/03/13 14:46:18.707
+level： Debug
+logger： M.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.3.41
+message： /Menu/AddOrUpdateDetail 
+exception：Property set method not found. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： M.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 80
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 4624
+processname： iisexpress 
+traceid： 00-e83abcc9898c104ba792af70130fdd58-d5a560e1f31a213f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------
+
+date： 2022/03/13 19:27:12.530
+level： Debug
+logger： M.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.3.41
+message： /Menu/ListDetail 
+exception：中文提示 : 拉姆达解析不支持当前函数JilToJson，SqlFunc这个类里面有大量函数可用,也许有你想要的，例如： it=>SqlFunc.HasValue(it.Id)
+English Message : Expression parsing does not support the current function JilToJson. There are many functions available in the SqlFunc class, for example, it=>SqlFunc.HasValue(it.Id) 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： M.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 35
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 2388
+processname： iisexpress 
+traceid： 00-7f104170ccd4548e6629ee7784dacc26-029e9034b90f9114-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------

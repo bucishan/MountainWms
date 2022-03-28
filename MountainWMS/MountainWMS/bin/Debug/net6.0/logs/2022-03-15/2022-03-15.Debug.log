@@ -1,0 +1,44 @@
+
+date： 2022/03/15 16:22:26.569
+level： Debug
+logger： M.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.1.118
+message： /Auth/AddOrUpdate 
+exception：将截断字符串或二进制数据。
+语句已终止。 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： M.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 891
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 6572
+processname： iisexpress 
+traceid： 00-60991b9f6eff491b2b886f476837af7c-7686abcd51e650d4-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------
+
+date： 2022/03/15 16:25:20.386
+level： Debug
+logger： M.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.1.118
+message： /Auth/AddOrUpdate 
+exception：将截断字符串或二进制数据。
+语句已终止。 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： M.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 899
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 6572
+processname： iisexpress 
+traceid： 00-4170e81a5d157405e0c1a031a1dfda90-aba80470280ec459-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------

@@ -1,0 +1,17 @@
+D:\Github\MountainWMS\Orm\bin\Release\net6.0\NOTICE.TXT
+D:\Github\MountainWMS\Orm\bin\Release\net6.0\NLog.config
+D:\Github\MountainWMS\Orm\bin\Release\net6.0\Orm.deps.json
+D:\Github\MountainWMS\Orm\bin\Release\net6.0\Orm.dll
+D:\Github\MountainWMS\Orm\bin\Release\net6.0\ref\Orm.dll
+D:\Github\MountainWMS\Orm\bin\Release\net6.0\Orm.pdb
+D:\Github\MountainWMS\Orm\bin\Release\net6.0\M.Utils.dll
+D:\Github\MountainWMS\Orm\bin\Release\net6.0\M.Utils.pdb
+D:\Github\MountainWMS\Orm\obj\Release\net6.0\Orm.csproj.AssemblyReference.cache
+D:\Github\MountainWMS\Orm\obj\Release\net6.0\Orm.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\MountainWMS\Orm\obj\Release\net6.0\Orm.AssemblyInfoInputs.cache
+D:\Github\MountainWMS\Orm\obj\Release\net6.0\Orm.AssemblyInfo.cs
+D:\Github\MountainWMS\Orm\obj\Release\net6.0\Orm.csproj.CoreCompileInputs.cache
+D:\Github\MountainWMS\Orm\obj\Release\net6.0\Orm.csproj.CopyComplete
+D:\Github\MountainWMS\Orm\obj\Release\net6.0\Orm.dll
+D:\Github\MountainWMS\Orm\obj\Release\net6.0\ref\Orm.dll
+D:\Github\MountainWMS\Orm\obj\Release\net6.0\Orm.pdb

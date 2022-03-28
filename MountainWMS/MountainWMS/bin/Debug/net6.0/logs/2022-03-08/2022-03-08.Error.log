@@ -1,0 +1,43 @@
+
+date： 2022/03/08 10:52:50.753
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：The following sections have been defined but have not been rendered by the page at '/Views/Shared/_LayoutMain.cshtml': 'styles'. To ignore an unrendered section call IgnoreSection("sectionName"). 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 1794
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 15232
+processname： iisexpress 
+traceid： 00-f7a59889fc54202a97e9a9d600380395-b36203faf2a21e01-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------
+
+date： 2022/03/08 16:11:53.375
+level： Error
+logger： Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware
+machinename： HUNTER 
+clientip：192.168.1.118
+message： An unhandled exception has occurred while executing the request. 
+exception：One or more compilation failures occurred:
+D:\Github\MountainWMS\MountainWMS\Views\Home\Index.cshtml(154,76): error CS0234: 命名空间“YL”中不存在类型或命名空间名“Core”(是否缺少程序集引用?) 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Diagnostics.DiagnosticsLoggerExtensions.UnhandledException
+callsite-linenumber： 0
+counter： 62
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 14708
+processname： iisexpress 
+traceid： 00-8d7f03d54a1dd79b530026b5413f4e80-927499b3680b8715-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__9.MoveNext => DiagnosticsLoggerExtensions.UnhandledException
+-----------------------------------------------------------

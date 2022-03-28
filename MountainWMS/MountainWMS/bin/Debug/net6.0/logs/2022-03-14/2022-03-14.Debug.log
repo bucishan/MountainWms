@@ -1,0 +1,21 @@
+
+date： 2022/03/14 13:56:10.139
+level： Debug
+logger： M.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.1.118
+message： /Menu/Detail 
+exception：列名 'IsDel' 无效。 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： M.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 154
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 12648
+processname： iisexpress 
+traceid： 00-246ffc6e97611c9bc9cef05cc4faeee4-7fde061cfa938532-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------

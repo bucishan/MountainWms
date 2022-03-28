@@ -1,0 +1,194 @@
+﻿@section styles{
+    <link rel="stylesheet" href="~/css/bootstrap-select.min.css" />
+}
+@{
+    Layout = "_LayoutView";
+}
+@section scripts{
+    <script src="~/js/bootstrap-select.min.js"></script>
+    <script src="~/js/defaults-zh_CN.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#MaterialId').on('show.bs.select', function (e, clickedIndex, isSelected, previousValue) {
+                var divdom = $("div[class='bs-searchbox']")[0].childNodes[0];
+                $(divdom).on("input propertychange", function () {
+                    var dom = $("li[class='no-results']");
+                    var text = divdom.value;
+                    if (dom.length > 0) {
+                        app.searchMaterial(text, 2);
+                    }
+                    if (app.MaterialList.length <= 0) {
+                        app.searchMaterial(text, 2);
+                    }
+                });
+            });
+        });
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                datemin: '',
+                datemax: '',
+                StorageRackId: '',
+                MaterialId: '',
+                MaterialList: [],
+                url: ''
+            },
+            mounted: function () {
+                var _self = this;
+                _self.$nextTick(function () {
+                    //显示active
+                    //_self.$refs.Inventory.parentNode.parentNode.classList.add("active");
+                    //_self.$refs.Inventory.classList.add("active");
+                    //_self.$refs.datemin.value = _self.getCurrentMonthFirst();
+                    //_self.$refs.datemax.value = _self.getCurrentMonthLast();
+                    _self.datemin = _self.getCurrentMonthFirst();
+                    _self.datemax = _self.getCurrentMonthLast();
+                    $('#datemin').datetimepicker({
+                        format: 'yyyy-mm-dd',
+                        minView: 2,
+                        autoclose: true,
+                        language: "zh-CN"
+                    });
+                    $('#datemax').datetimepicker({
+                        format: 'yyyy-mm-dd',
+                        minView: 2,
+                        autoclose: true,
+                        language: "zh-CN"
+                    });
+                    $("#MaterialId").selectpicker({
+                        noneSelectedText: '全部物料',
+                    });
+                    _self.searchMaterial("", 1);
+                    setTimeout(function () {
+                        _self.loadL();
+                        $("div[class='pull-right search']")[0].children[0].setAttribute("placeholder", "物料编号或名称");
+                    }, 500);
+                });
+            },
+            methods: {
+                searchMaterial: function (val, type) {
+                    var _self = this;
+                    if (type === 1) {
+                        _self.url = "/Material/Search";
+                    } else {
+                        _self.url = "/Material/Search?text=" + val;
+                    }
+                    yui.$axiosget(_self.url).then(function (res) {
+                        _self.MaterialList = res.data.rows;
+                        var html = "<option value=''>全部物料</option>";
+                        for (var item in _self.MaterialList) {
+                            html += "<option value='" + _self.MaterialList[item].MaterialId + "' " + "data-subtext='" + _self.MaterialList[item].MaterialNo + "'>" + _self.MaterialList[item].MaterialName + "</option>"
+                        }
+                        if (type !== 1) {
+                            $("#MaterialId").empty();
+                        }
+                        $("#MaterialId").append(html)
+                        $('#MaterialId').selectpicker('refresh');
+                        //$('#MaterialId').selectpicker('val', _self.MaterialId);
+                    }).catch(function (res) {
+                    });
+                },
+                loadL: function () {
+                    _self = this;
+                    var obj = [{
+                        checkbox: true,             //是否显示复选框
+                        visible: true
+                    },
+                    {
+                        field: 'InventoryId',
+                        title: 'Id',
+                        visible: false
+                    },
+                    {
+                        field: 'MaterialNo',
+                        title: '物料编号',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'MaterialName',
+                        title: '物料名称',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'Qty',
+                        title: '库存容量',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            if (value > row.SafeQty) {
+                                return '<span class="label label-success radius">' + value + '</span>';
+                            } else {
+                                return '<span class="label label-danger radius">' + value + '</span>';
+                            }
+                        }
+                    },
+                    {
+                        field: 'SafeQty',
+                        title: '安全库存',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'StorageRackNo',
+                        title: '货架编号',
+                        align: 'center',
+                        sortable: true
+                    },
+                    {
+                        field: 'StorageRackName',
+                        title: '货架名称',
+                        align: 'center',
+                        sortable: true
+                    },
+                    {
+                        field: 'Remark',
+                        align: 'center',
+                        title: '备注'
+                    }, {
+                        field: 'CName',
+                        title: '创建人',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'CreateDate',
+                        align: 'center',
+                        title: '创建时间',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }, {
+                        field: 'UName',
+                        align: 'center',
+                        title: '修改人',
+                        sortable: true
+                    }, {
+                        field: 'ModifiedDate',
+                        title: '修改时间',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }];
+                    var qParams = {
+                        StorageRackId: _self.StorageRackId,
+                        MaterialId: _self.MaterialId
+                    };
+                    yui.table("bootstraptable", "/Inventory/List", obj, "POST", "InventoryId", true, qParams);
+                },
+                searchL: function () {
+                    var qParams = {
+                        StorageRackId: _self.StorageRackId,
+                        MaterialId: _self.MaterialId
+                    };
+                    var query = {
+                        silent: true,
+                        query: qParams
+                    };
+                    $("#bootstraptable").bootstrapTable('refresh', query);
+                },
+            }
+        });
+    </script>
+}

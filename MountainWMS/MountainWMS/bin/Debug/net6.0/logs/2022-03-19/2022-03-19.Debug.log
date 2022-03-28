@@ -1,0 +1,42 @@
+
+date： 2022/03/19 14:44:21.180
+level： Debug
+logger： M.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.3.41
+message： /Role/GetRoleMenuList 
+exception：Input string was not in a correct format. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： M.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 175
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 10052
+processname： iisexpress 
+traceid： 00-554d530bdf05e457b9280823211c36e8-f53cc56692012c37-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------
+
+date： 2022/03/19 14:45:29.409
+level： Debug
+logger： M.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.3.41
+message： /Role/GetRoleMenuList 
+exception：Input string was not in a correct format. 
+appdomain： 0001:MountainWMS
+assembly-version： 1.0.0.0
+basedir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0\ 
+callsite： M.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 204
+nlogdir： D:\Github\MountainWMS\MountainWMS\bin\Debug\net6.0 
+processid： 10052
+processname： iisexpress 
+traceid： 00-407b8878c468f7b5f8c00597c2b6eda2-b167269143a0b81d-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------

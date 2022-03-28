@@ -1,0 +1,42 @@
+
+date： 2022/03/05 22:10:12.206
+level： Info
+logger： Microsoft.AspNetCore.Routing.EndpointMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Executed endpoint 'KopSoftWms.Controllers.MenuController.ListDetail (KopSoftWms)' 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke
+callsite-linenumber： 0
+counter： 436
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 2164
+processname： iisexpress 
+traceid： 00-31f54bb8cf466fc7657814d2f4e50735-719b17bf2fb12eea-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncMethodBuilderCore.Start => <Invoke>d__3.MoveNext => EndpointMiddleware.Invoke
+-----------------------------------------------------------
+
+date： 2022/03/05 22:10:12.322
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request finished HTTP/1.1 POST http://localhost:30682/Menu/ListDetail application/x-www-form-urlencoded;+charset=UTF-8 5 - 200 - text/plain;+charset=utf-8 778.6964ms 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 437
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 2164
+processname： iisexpress 
+traceid： 00-31f54bb8cf466fc7657814d2f4e50735-719b17bf2fb12eea-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------

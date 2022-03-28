@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Github\MountainWMS\MountainWMS\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2022-03-24T01:44:27.8592159Z;True|2022-03-23T14:24:08.0526721+08:00;False|2022-03-23T14:22:04.9418371+08:00;True|2022-03-23T13:48:19.2111290+08:00;True|2022-03-08T16:36:44.5960416+08:00;False|2022-03-08T16:29:18.7582699+08:00;</History>
+  </PropertyGroup>
+</Project>

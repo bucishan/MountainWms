@@ -1,0 +1,63 @@
+
+date： 2022/03/07 10:05:03.838
+level： Debug
+logger： YL.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.1.118
+message： /Error/Index 
+exception：Object reference not set to an instance of an object. 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： YL.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 23
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 12024
+processname： iisexpress 
+traceid： 00-5ff3383d49143706505713af6fae62cc-f223ecbefb487018-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------
+
+date： 2022/03/07 10:10:25.128
+level： Debug
+logger： YL.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.1.118
+message： /Error/Index 
+exception：Object reference not set to an instance of an object. 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： YL.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 23
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 11304
+processname： iisexpress 
+traceid： 00-71984803a5b03453b77cf151dd176044-9e04d942bb05fe06-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------
+
+date： 2022/03/07 10:10:41.496
+level： Debug
+logger： YL.Utils.Log.NlogUtil
+machinename： HUNTER 
+clientip：192.168.1.118
+message： /Error/Index 
+exception：Object reference not set to an instance of an object. 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： YL.Utils.Log.NlogUtil.Debug
+callsite-linenumber： 17
+counter： 47
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 11304
+processname： iisexpress 
+traceid： 00-052e67977d3add456d979889ef92855c-d87afd694e68ffef-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: ExceptionFilterAttribute.OnExceptionAsync => BaseExceptionAttribute.OnException => NlogUtil.Debug
+-----------------------------------------------------------

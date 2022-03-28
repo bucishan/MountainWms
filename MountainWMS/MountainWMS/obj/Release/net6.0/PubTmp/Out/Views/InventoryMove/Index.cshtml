@@ -1,0 +1,492 @@
+﻿@{
+    Layout = "_LayoutView";
+}
+@section scripts{
+    <script src="~/lib/lodop/LodopFuncs.js"></script>
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                datemin: '',
+                datemax: '',
+                Status: '',
+                moveList: [],
+                moveDList: [],
+            },
+            mounted: function () {
+                var _self = this;
+                _self.$nextTick(function () {
+                    //_self.$refs.datemin.value = _self.getCurrentMonthFirst();
+                    //_self.$refs.datemax.value = _self.getCurrentMonthLast();
+                    _self.datemin = _self.getCurrentMonthFirst();
+                    _self.datemax = _self.getCurrentMonthLast();
+                    $('#datemin').datetimepicker({
+                        format: 'yyyy-mm-dd',
+                        minView: 2,
+                        autoclose: true,
+                        language: "zh-CN"
+                    });
+                    $('#datemax').datetimepicker({
+                        format: 'yyyy-mm-dd',
+                        minView: 2,
+                        autoclose: true,
+                        language: "zh-CN"
+                    });
+                    setTimeout(function () {
+                        _self.loadL();
+                        $("div[class='pull-right search']")[0].children[0].setAttribute("placeholder", "移库单号");
+                    }, 500);
+                });
+            },
+            methods: {
+                loadL: function () {
+                    _self = this;
+                    var obj = [{
+                        checkbox: true,             //是否显示复选框
+                        visible: true
+                    },
+                    {
+                        field: 'InventorymoveId',
+                        title: 'Id',
+                        visible: false
+                    }, {
+                        field: 'Status',
+                        title: '操作',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            var html = [];
+                            var arr = [2, 5];
+                            if (arr.indexOf(value) == -1) {
+                                if ($('#btn_showL').length > 0) {
+                                    html.push('<button id="addDetailL" type="button" class="btn btn-link" >添加明细</button>')
+                                }
+                                if ($('#btn_editL').length > 0) {
+                                    html.push('<button id="editDetailL" type="button" class="btn btn-link" >修改</button>')
+                                }
+                                //html.push('<button id="addDetailL" type="button" class="btn btn-link" >添加明细</button>'
+                                //    ,'<button id="editDetailL" type="button" class="btn btn-link" >修改</button>');
+                            }
+                            return html.join('');
+                        },
+                        events: {
+                            'click #addDetailL': function (e, value, row, index) {
+                                if (value === 1) {
+                                    app.addDetailL(row.InventorymoveId);
+                                } else {
+                                    layer.msg("初始转态才允许添加！", { icon: 5 });
+                                }
+                            },
+                            'click #editDetailL': function (e, value, row, index) {
+                                var arr = [2, 5];
+                                if (arr.indexOf(value) == -1) {
+                                    app.editDetailL(row.InventorymoveId);
+                                } else {
+                                    layer.msg("初始转态才允许修改！", { icon: 5 });
+                                }
+                            }
+                        },
+                    }, {
+                        field: 'InventorymoveNo',
+                        title: '移库单号',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'SourceStorageRackNo',
+                        title: '原货架编号',
+                        align: 'center',
+                        sortable: true
+                    }
+                        , {
+                        field: 'SourceStorageRackName',
+                        title: '原货架名称',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'AimStorageRackNo',
+                        title: '目标货架编号',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'AimStorageRackName',
+                        title: '目标货架名称',
+                        align: 'center',
+                        sortable: true
+                    },
+                    {
+                        field: 'Status',
+                        title: '状态',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            switch (value) {
+                                case 1:
+                                    return '<span class="label label-success radius">初始</span>';
+                                //return "初始";
+                                case 2:
+                                    return '<span class="label label-success radius">审核通过</span>';
+                                //return "审核通过";
+                                case 3:
+                                    return '<span class="label label-success radius">审核未通过</span>';
+                                case 5:
+                                    return '<span class="label label-success radius">已发货</span>';
+                                // "审核未通过";
+                                default:
+                                    return '<span class="label label-success radius">-</span>';
+                            }
+                        }
+                    }, {
+                        field: 'Remark',
+                        align: 'center',
+                        title: '备注'
+                    }, {
+                        field: 'CName',
+                        title: '创建人',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'CreateDate',
+                        align: 'center',
+                        title: '创建时间',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }, {
+                        field: 'UName',
+                        align: 'center',
+                        title: '修改人',
+                        sortable: true
+                    }, {
+                        field: 'ModifiedDate',
+                        title: '修改时间',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }];
+                    var qParams = {
+                        Status: _self.Status,
+                    };
+                    var objSub = [{
+                        checkbox: true,             //是否显示复选框
+                        visible: true
+                    },
+                    {
+                        field: 'MoveDetailId',
+                        title: 'Id',
+                        visible: false
+                    }, {
+                        field: 'InventorymoveId',
+                        title: 'pid',
+                        visible: false,
+                    }, {
+                        field: 'Status',
+                        title: '操作',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            var html = [];
+                            if (value != 2 && $('#btn_deleteL').length > 0) {
+                                html.push('<button id="deleteDetailL" type="button" class="btn btn-link">删除</button>');
+                            }
+                            return html.join('');
+                        },
+                        events: {
+                            'click #deleteDetailL': function (e, value, row, index) {
+                                if (value === 1) {
+                                    app.deleteDetailL(row.MoveDetailId);
+                                } else {
+                                    layer.msg("初始转态才允许添加！", { icon: 5 });
+                                }
+                            },
+
+                        },
+                    }, {
+                        field: 'MaterialNo',
+                        title: '物料编号',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'MaterialName',
+                        title: '物料名称',
+                        align: 'center',
+                        sortable: true
+                    },
+                    {
+                        field: 'ActQty',
+                        title: '实际数量',
+                        align: 'center',
+                        sortable: true
+                    },
+                    {
+                        field: 'Status',
+                        title: '状态',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            switch (value) {
+                                case 1:
+                                    return '<span class="label label-success radius">待审核</span>';
+                                case 2:
+                                    return '<span class="label label-success radius">审核通过</span>';
+                                case 3:
+                                    return '<span class="label label-success radius">审核未通过</span>';
+                                default:
+                                    return '<span class="label label-success radius">-</span>';
+                            }
+                        }
+                    }, {
+                        field: 'AName',
+                        title: '审核人',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'AuditinTime',
+                        align: 'center',
+                        title: '审核时间',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }, {
+                        field: 'Remark',
+                        align: 'center',
+                        title: '备注'
+                    }, {
+                        field: 'CName',
+                        title: '创建人',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'CreateDate',
+                        align: 'center',
+                        title: '创建时间',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }, {
+                        field: 'UName',
+                        align: 'center',
+                        title: '修改人',
+                        sortable: true
+                    }, {
+                        field: 'ModifiedDate',
+                        title: '修改时间',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }];
+
+                    yui.table2("bootstraptable", "/InventoryMove/List", "/InventoryMove/ListDetail", obj, objSub, "POST", "InventorymoveId", "InventorymoveId", true, qParams);
+                },
+                showL: function () {
+                    yui.layershow("移库", "/InventoryMove/Add", 600, 500);
+                },
+                addDetailL: function (val) {
+                    yui.layershow("移库明细", "/InventoryMove/Detail?pid=" + val, 600, 500);
+                },
+                htmlL: function (val, type) {
+                    var index = layer.load(1, {
+                        shade: [0.1, '#fff'] //0.1透明度的白色背景
+                    });
+                    var html = "";
+                    yui.$axiosget('/InventoryMove/PreviewJson?id=' + val)
+                        .then(function (response) {
+                            _self.moveList = response.data.Item2;
+                            _self.moveDList = response.data.Item4;
+                            html = response.data.Item5;
+                            if (_self.moveList.length > 0) {
+                                var a = _self.moveList[0];
+                                html = html.replace("{InventorymoveNo}", a.InventorymoveNo);
+                                html = html.replace("{SourceStoragerackNo}", a.SourceStoragerackNo);
+                                html = html.replace("{SourceStoragerackName}", a.SourceStoragerackName);
+                                html = html.replace("{AimStoragerackNo}", a.AimStoragerackNo);
+                                html = html.replace("{AimStoragerackName}", a.AimStoragerackName);
+                            }
+                            var detail = "";
+                            if (_self.moveDList.length > 0) {
+                                for (var item in _self.moveDList) {
+                                    var a = _self.moveDList[0];
+                                    detail += "<tr>";
+                                    detail += "<td>" + a.MaterialNo + "</td>";
+                                    detail += "<td>" + a.MaterialName + "</td>";
+                                    detail += "<td>" + a.ActQty + "</td>";
+                                    detail += "<td>" + a.Status + "</td>";
+                                    detail += "<td>" + _self.formatNull(a.AName) + "</td>";
+                                    detail += "<td>" + _self.formatL(a.AuditinTime) + "</td>";
+                                    detail += "</tr>";
+                                }
+                            }
+                            html = html.replace("{Content}", detail);
+                            var LODOP = _self.LODOPL();
+                            LODOP.PRINT_INIT("移库单")
+                            LODOP.ADD_PRINT_HTM(0, 100, "100%", "100%", html);
+                            if (type === 1) {
+                                LODOP.PREVIEW();
+                                //LODOP.PRINT_DESIGN();
+                            } else {
+                                LODOP.PRINT();
+                            }
+                        })
+                        .catch(function (error) {
+                            layer.msg("请安装Lodop插件", { icon: 5 });
+                            //layer.msg(error.message, { icon: 5 });
+                        });
+                    layer.close(index);
+                },
+                previewL: function (val) {
+                    var _self = this;
+                    var arr = $("#bootstraptable").bootstrapTable('getSelections');
+                    if (arr.length > 0) {
+                        _self.htmlL(arr[0].InventorymoveId, 1);
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                printL: function (val) {
+                    var _self = this;
+                    var arr = $("#bootstraptable").bootstrapTable('getSelections');
+                    if (arr.length > 0) {
+                        _self.htmlL(arr[0].InventorymoveId, 2);
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                LODOPL: function () {
+                    var LODOP = getLodop();
+                    return LODOP;
+                },
+                formatNull: function (val) {
+                    if (typeof (val) == "undefined" || val == "" || val == null || val == " " || val == "null") {
+                        return "";
+                    }
+                    return val;
+                },
+                formatL: function (val) {
+                    return this.jsonDateFormat(val);
+                },
+                searchL: function () {
+                    var qParams = {
+                        Status: _self.Status,
+                    };
+                    var query = {
+                        silent: true,
+                        query: qParams
+                    };
+                    $("#bootstraptable").bootstrapTable('refresh', query);
+                },
+                editL: function () {
+                    var arr = $("#bootstraptable").bootstrapTable('getSelections');
+                    if (arr.length > 0) {
+                        if (arr[0].Status == 2 || arr[0].Status == 5) {
+                            layer.msg("已审核，不允许修改", { icon: 5 });
+                            return false;
+                        }
+                        var index = layer.confirm("您确定要修改吗？", { btn: ["确定", "取消"] }, function () {
+                            layer.close(index);
+                            var id = arr[0].InventorymoveId;
+                            yui.layershow("修改移库", "/InventoryMove/Add?id=" + id, 600, 500);
+                        }, function () {
+
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                editDetailL: function (val) {
+                    if (val.length > 0) {
+                        var index = layer.confirm("您确定要修改明细吗？", { btn: ["确定", "取消"] }, function () {
+                            layer.close(index);
+                            yui.layershow("修改明细", "/InventoryMove/Detail?id=" + 1 + "&pid=" + val, 600, 500);
+                        }, function () {
+
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                auditinL: function (val) {
+                    var arr = $("#bootstraptable").bootstrapTable('getSelections');
+                    if (arr.length > 0) {
+                        if (arr[0].Status !== 1) {
+                            layer.msg("非初始状态，不允许审核", { icon: 5 });
+                            return false;
+                        }
+                        var index = layer.confirm("您确定要审核吗？", { btn: ["确定", "取消"] }, function () {
+                            yui.$axiosget('/InventoryMove/Auditin?id=' + arr[0].InventorymoveId)
+                                .then(function (response) {
+                                    if (response.data.Item1) {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 1 });
+                                        _self.searchL();
+                                    } else {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 5 });
+                                    }
+                                })
+                                .catch(function (error) {
+                                    layer.msg(error.message, { icon: 5 });
+                                });
+                            layer.close(index);
+                        }, function () {
+
+                        });
+                    } else {
+                        layer.alert("请选要审核的数据行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                deleteDetailL: function (val) {
+                    if (val.length > 0) {
+                        var index = layer.confirm("您确定要删除明细吗？", { btn: ["确定", "取消"] }, function () {
+                            yui.$axiosget('/InventoryMove/DeleteDetail?id=' + val)
+                                .then(function (response) {
+                                    if (response.data.Item1) {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 1 });
+                                        _self.searchL();
+                                    } else {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 5 });
+                                    }
+                                })
+                                .catch(function (error) {
+                                    layer.msg(error.message, { icon: 5 });
+                                });
+                            layer.close(index);
+                        }, function () {
+
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                deleteL: function () {
+                    var _self = this;
+                    var arr = $("#bootstraptable").bootstrapTable('getSelections');
+                    if (arr.length > 0) {
+                        var index = layer.confirm("您确定要删除吗？", { btn: ["确定", "取消"] }, function () {
+                            var id = arr[0].InventorymoveId;
+                            yui.$axiosget('/InventoryMove/Delete?id=' + id)
+                                .then(function (response) {
+                                    if (response.data.Item1) {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 1 });
+                                        _self.searchL();
+                                    } else {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 5 });
+                                    }
+                                })
+                                .catch(function (error) {
+                                    layer.msg(error.message, { icon: 5 });
+                                });
+                            layer.close(index);
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+
+            }
+        });
+    </script>
+}

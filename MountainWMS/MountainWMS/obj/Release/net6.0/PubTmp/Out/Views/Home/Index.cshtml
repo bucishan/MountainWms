@@ -1,0 +1,156 @@
+﻿@inject Microsoft.Extensions.Configuration.IConfiguration _config
+@using Microsoft.Extensions.Configuration;
+
+<section class="col-sm-10 bg-mountain">
+    <h2 class="text-center" style="color: #626262;">欢迎使用 <strong>@ViewBag.softname</strong> @ViewBag.softtype</h2>
+    <svg></svg>
+</section>
+
+@section scripts{ 
+    <script type="text/javascript" name="section_js">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                Seconds: 5,
+                Interval: null
+            },
+            mounted: function () {
+                var _self = this;
+                _self.$nextTick(function () {
+                    //setTimeout(function () {
+                    //    clearInterval(_self.Interval);
+                    //    $('a[menu-controller="/Dashboard"]').trigger('click');
+                    //    //GetPages("/Dashboard");
+                    //}, 3000);
+                    //_self.Interval = setInterval(() => {
+                    //    _self.Seconds--;
+                    //},1000)
+
+                    var svgNS = "http://www.w3.org/2000/svg";
+                    var svg = document.querySelector("svg");
+                    //var colors = ["#725269", "#1A2040", "#FFD06B", "#F39A6C", "#A46E63"];
+                    var colors = ["#FFCC6E", "#FBA470", "#A4453F", "#90404C", "#AF4764"];
+                    var amount = 3;
+                    var ww = $('.content-wrapper').width();
+                    var wh = $('.content-wrapper').height();
+                    var mountains = [];
+                    svg.setAttribute("viewBox", "0 0 " + ww + " " + wh);
+                    svg.setAttribute("preserveAspectRatio", "xMidYMax meet");
+
+                    for (var i = 0; i < amount; i++) {
+                        //var x = Math.round(Math.random() * (ww * 2) - (ww * 1.5));
+                        //var x2 = Math.round(Math.random() * (ww * 2) + (ww * 0.5));
+
+                        var x = Math.round(Math.random() * ww - (ww * 0.4));
+                        var x2 = x + Math.round(Math.random() * ww + (ww * 0.2));
+
+                        var y = Math.round(Math.random() * (wh * 0.8 / (amount - i))) + wh * 0.1;
+                        var middle = ((x2 - x) / 2 + x);
+                        var group = document.createElementNS(svgNS, "g");
+                        mountains.push(group);
+
+                        var mountain = document.createElementNS(svgNS, "polygon");
+                        mountain.setAttributeNS(null, "points", x + "," + wh + " " + x2 + "," + wh + "" + " " + middle + "," + y);
+                        mountain.setAttributeNS(null, "fill", colors[i % 5]);
+
+                        var snow = document.createElementNS(svgNS, "polygon");
+                        snow.setAttributeNS(null, "r", "10");
+
+                        var height = Math.round(Math.random() * (wh - y) * 0.3 + (wh - y) * 0.2);
+                        var snowLeft = Math.round(middle - (middle - x) / ((wh - y) / height));
+                        var snowRight = Math.round(middle + (x2 - middle) / ((wh - y) / height));
+
+                        var snowKeysLength = Math.floor(Math.random() * 7) + 2;
+                        var dotsMiddle = "";
+                        for (var j = 0; j < snowKeysLength; j++) {
+                            var x1 = Math.round((snowRight - snowLeft) * (1 / (snowKeysLength + 1) * (j + 1)) + snowLeft);
+                            var y1 = Math.round((y + height) + (Math.random() - 0.5) * (height * 0.5));
+                            dotsMiddle += " " + x1 + "," + y1;
+                        }
+
+                        snow.setAttributeNS(null, "points",
+                            middle + "," + y + " " +
+                            (snowLeft) + "," + (y + height) + " " +
+                            dotsMiddle + " " +
+                            (snowRight) + "," + (y + height));
+
+                        snow.setAttributeNS(null, "class", "snow");
+                        group.setAttributeNS(null, "z", i / 2);
+                        group.setAttributeNS(null, "opacity", (i + 1) * 0.2);
+                        //console.log()
+
+                        group.appendChild(mountain);
+                        group.appendChild(snow);
+                        svg.appendChild(group);
+
+                        //TweenMax.from(mountains[i], 3, {
+                        //    y: wh,
+                        //    ease: Power2.easeOut,
+                        //    delay: (i / 1.5)
+                        //});
+                    }
+
+                    //function onMouseMove(e) {
+                    //    var x = (e.clientX - ww / 2) / (ww / 2) * 30;
+                    //    for (var i = 0; i < amount; i++) {
+                    //        var z = mountains[i].getAttribute("z");
+                    //        TweenMax.to(mountains[i], 1, {
+                    //            x: (x * z),
+                    //            ease: Power1.easeOut
+                    //        });
+                    //    }
+                    //}
+
+                    //window.addEventListener("mousemove", onMouseMove);
+                });
+            }
+        })
+    </script>
+}
+@*@section scripts{
+        <script type="text/javascript">
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    menuList: []
+                },
+                mounted: function () {
+                    var _self = this;
+                    _self.$nextTick(function () {
+                        //if (!navigator.userAgent.match(/x64/i)) {
+                        //    console.info("32位浏览器");
+                        //} else {
+                        //    console.info("64位浏览器");
+                        //}
+                        //home
+                        //if (typeof (EventSource) !== 'undefined') {
+                        //    var eventSource = new EventSource(`http://${location.host}/Home/ServerSendMsg`);
+                        //    eventSource.onopen = function () {
+                        //        //console.log('连接打开。。。');
+                        //    }
+                        //    eventSource.onerror = function (e) {
+                        //        //console.log(e);
+                        //    }
+                        //    eventSource.onmessage = function (event) {
+                        //        console.log(event.data);
+                        //        var origin = event.origin
+                        //        var last = event.lastEventId
+                        //    }
+                        //    //eventSource.addEventListener('message', function (event) {
+                        //    //    var origin = event.origin;
+                        //    //    var lastEventId = event.lastEventId;
+                        //    //    console.log(event.data, 2);
+                        //    //}, false);
+                        //} else {
+                        //    console.info('浏览器不支持EventSource')
+                        //}
+                    });
+                },
+                methods: {
+                    loadL: function () {
+
+                    },
+                }
+            });
+        </script>
+    }*@

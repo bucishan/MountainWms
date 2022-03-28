@@ -1,0 +1,17 @@
+﻿@model M.Core.Dto.MenuInfoDto
+
+<section class="content-header">
+    @{
+        if (Model != null)
+        {
+            <h1>
+                @Model.ParentMenuName
+                <small>@Model.MenuName</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="/"><i class="fa fa-dashboard"></i> 首页</a></li>
+                <li class="active">@Model.MenuName</li>
+            </ol>
+        }
+    }
+</section>

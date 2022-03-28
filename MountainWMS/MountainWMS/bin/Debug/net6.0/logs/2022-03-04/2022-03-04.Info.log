@@ -1,0 +1,420 @@
+
+date： 2022/03/04 22:34:48.584
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request starting HTTP/1.1 GET http://localhost:30682/js/vueqypa.min.js - - 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestStarting
+callsite-linenumber： 0
+counter： 70
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-f632d21210b1efeb7ae0d0cc67aa8b28-b5747e56e8dc5ff7-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: HostingApplication.CreateContext => HostingApplicationDiagnostics.BeginRequest => HostingApplicationDiagnostics.LogRequestStarting
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:48.248
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request starting HTTP/1.1 GET http://localhost:30682/js/echarts.common.min.js - - 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestStarting
+callsite-linenumber： 0
+counter： 71
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-95ed4b570751d47e47c6c2aa43897744-1997f780c2599c4f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: HostingApplication.CreateContext => HostingApplicationDiagnostics.BeginRequest => HostingApplicationDiagnostics.LogRequestStarting
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:49.888
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request finished HTTP/1.1 GET http://localhost:30682/js/locales/bootstrap-datetimepicker.zh-CN.js - - - 200 875 application/javascript 1781.3578ms 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 72
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-aad4c5d11198c66e4dcb460c8601019c-08f25184e7600c0d-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:49.694
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request finished HTTP/1.1 GET http://localhost:30682/fonts/fontawesome-webfont.woff2?v=4.7.0 - - - 200 77160 font/woff2 4451.2774ms 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 73
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-b7b1ae78e5d820cd6e2b04411eb6a9d1-53a16ec13d490c4b-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:50.244
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request finished HTTP/1.1 GET http://localhost:30682/fonts/ionicons.ttf?v=2.0.0 - - - 200 188508 application/x-font-ttf 4255.0436ms 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 74
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-93da627a9d4237c9405f594616f1aa81-411202d58b497f58-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:50.405
+level： Info
+logger： Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Sending file. Request path: '/js/vueqypa.min.js'. Physical path: 'D:\Github\KopSoftWms\src\KopSoftWms\wwwroot\js\vueqypa.min.js' 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.StaticFiles.LoggerExtensions.FileServedCore
+callsite-linenumber： 0
+counter： 75
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-f632d21210b1efeb7ae0d0cc67aa8b28-b5747e56e8dc5ff7-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncStateMachineBox`1.ExecutionContextCallback => <ServeStaticFile>d__47.MoveNext => LoggerExtensions.FileServedCore
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:49.563
+level： Info
+logger： Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Sending file. Request path: '/lib/layer/layer.js'. Physical path: 'D:\Github\KopSoftWms\src\KopSoftWms\wwwroot\lib\layer\layer.js' 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.StaticFiles.LoggerExtensions.FileServedCore
+callsite-linenumber： 0
+counter： 76
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-4684fc85c9a1a65dd4e747f16c65680f-afe1b970ad718782-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncStateMachineBox`1.ExecutionContextCallback => <ServeStaticFile>d__47.MoveNext => LoggerExtensions.FileServedCore
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:50.594
+level： Info
+logger： Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Sending file. Request path: '/js/echarts.common.min.js'. Physical path: 'D:\Github\KopSoftWms\src\KopSoftWms\wwwroot\js\echarts.common.min.js' 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.StaticFiles.LoggerExtensions.FileServedCore
+callsite-linenumber： 0
+counter： 77
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-95ed4b570751d47e47c6c2aa43897744-1997f780c2599c4f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncStateMachineBox`1.ExecutionContextCallback => <ServeStaticFile>d__47.MoveNext => LoggerExtensions.FileServedCore
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:51.221
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request finished HTTP/1.1 GET http://localhost:30682/js/vueqypa.min.js - - - 200 227911 application/javascript 2636.6271ms 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 78
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-f632d21210b1efeb7ae0d0cc67aa8b28-b5747e56e8dc5ff7-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:51.363
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request finished HTTP/1.1 GET http://localhost:30682/lib/layer/layer.js - - - 200 25865 application/javascript 3802.9539ms 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 79
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-4684fc85c9a1a65dd4e747f16c65680f-afe1b970ad718782-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:51.372
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request starting HTTP/1.1 GET http://localhost:30682/lib/layer/theme/default/layer.css?v=3.1.1 - - 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestStarting
+callsite-linenumber： 0
+counter： 80
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-d8a77af041578ad46ea8748f0720c651-501ded6d4ba7b125-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: HostingApplication.CreateContext => HostingApplicationDiagnostics.BeginRequest => HostingApplicationDiagnostics.LogRequestStarting
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:51.518
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request finished HTTP/1.1 GET http://localhost:30682/js/echarts.common.min.js - - - 200 470071 application/javascript 3258.7263ms 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 81
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-95ed4b570751d47e47c6c2aa43897744-1997f780c2599c4f-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:51.667
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request starting HTTP/1.1 GET http://localhost:30682/favicon.ico - - 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestStarting
+callsite-linenumber： 0
+counter： 82
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-0f27a46b73646123d515aba1ab1bdb86-5439266dc4431d8e-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: HostingApplication.CreateContext => HostingApplicationDiagnostics.BeginRequest => HostingApplicationDiagnostics.LogRequestStarting
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:51.993
+level： Info
+logger： Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Sending file. Request path: '/lib/layer/theme/default/layer.css'. Physical path: 'D:\Github\KopSoftWms\src\KopSoftWms\wwwroot\lib\layer\theme\default\layer.css' 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.StaticFiles.LoggerExtensions.FileServedCore
+callsite-linenumber： 0
+counter： 83
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-d8a77af041578ad46ea8748f0720c651-501ded6d4ba7b125-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncStateMachineBox`1.ExecutionContextCallback => <ServeStaticFile>d__47.MoveNext => LoggerExtensions.FileServedCore
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:52.261
+level： Info
+logger： Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Sending file. Request path: '/favicon.ico'. Physical path: 'D:\Github\KopSoftWms\src\KopSoftWms\wwwroot\favicon.ico' 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.StaticFiles.LoggerExtensions.FileServedCore
+callsite-linenumber： 0
+counter： 84
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-0f27a46b73646123d515aba1ab1bdb86-5439266dc4431d8e-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncStateMachineBox`1.ExecutionContextCallback => <ServeStaticFile>d__47.MoveNext => LoggerExtensions.FileServedCore
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:52.387
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request finished HTTP/1.1 GET http://localhost:30682/lib/layer/theme/default/layer.css?v=3.1.1 - - - 200 20687 text/css 1014.5748ms 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 85
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-d8a77af041578ad46ea8748f0720c651-501ded6d4ba7b125-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:52.531
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request finished HTTP/1.1 GET http://localhost:30682/favicon.ico - - - 200 32038 image/x-icon 863.9761ms 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 86
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-0f27a46b73646123d515aba1ab1bdb86-5439266dc4431d8e-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:52.624
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request starting HTTP/1.1 GET http://localhost:30682/favicon.ico - - 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestStarting
+callsite-linenumber： 0
+counter： 87
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-c7c7109b95cb07f810a390a6d35928f2-0acfca1246f29ff2-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: HostingApplication.CreateContext => HostingApplicationDiagnostics.BeginRequest => HostingApplicationDiagnostics.LogRequestStarting
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:52.996
+level： Info
+logger： Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Sending file. Request path: '/favicon.ico'. Physical path: 'D:\Github\KopSoftWms\src\KopSoftWms\wwwroot\favicon.ico' 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.StaticFiles.LoggerExtensions.FileServedCore
+callsite-linenumber： 0
+counter： 88
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-c7c7109b95cb07f810a390a6d35928f2-0acfca1246f29ff2-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: AsyncStateMachineBox`1.ExecutionContextCallback => <ServeStaticFile>d__47.MoveNext => LoggerExtensions.FileServedCore
+-----------------------------------------------------------
+
+date： 2022/03/04 22:34:53.127
+level： Info
+logger： Microsoft.AspNetCore.Hosting.Diagnostics
+machinename： HUNTER 
+clientip：192.168.3.41
+message： Request finished HTTP/1.1 GET http://localhost:30682/favicon.ico - - - 200 32038 image/x-icon 502.0076ms 
+exception： 
+appdomain： 0001:KopSoftWms
+assembly-version： 1.0.0.0
+basedir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0\ 
+callsite： Microsoft.AspNetCore.Hosting.HostingApplicationDiagnostics.LogRequestFinished
+callsite-linenumber： 0
+counter： 89
+nlogdir： D:\Github\KopSoftWms\src\KopSoftWms\bin\Debug\net6.0 
+processid： 8864
+processname： iisexpress 
+traceid： 00-c7c7109b95cb07f810a390a6d35928f2-0acfca1246f29ff2-00 
+specialfolder： C:\Users\i\Desktop 
+stacktrace: <ProcessRequestAsync>d__2.MoveNext => HostingApplication.DisposeContext => HostingApplicationDiagnostics.LogRequestFinished
+-----------------------------------------------------------

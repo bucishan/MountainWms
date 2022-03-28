@@ -1,0 +1,380 @@
+﻿@{
+    Layout = "_LayoutView";
+}
+@section scripts{
+    <script type="text/javascript">
+        var app = new Vue({
+            el: '#app',
+            data: {
+                auth: ['add', 'edit', 'delete'],
+                datemin: '',
+                datemax: ''
+            },
+            mounted: function () {
+                var _self = this;
+                _self.$nextTick(function () {
+                    //_self.datemin = _self.getCurrentMonthFirst();
+                    _self.datemax = _self.getCurrentMonthLast();
+                    $('#datemin').datetimepicker({
+                        format: 'yyyy-mm-dd',
+                        minView: 2,
+                        autoclose: true,
+                        language: "zh-CN"
+                    });
+                    $('#datemax').datetimepicker({
+                        format: 'yyyy-mm-dd',
+                        minView: 2,
+                        autoclose: true,
+                        language: "zh-CN"
+                    });
+                    setTimeout(function () {
+                        _self.loadL();
+                        $("div[class='pull-right search']")[0].children[0].setAttribute("placeholder", "菜单名称");
+                    }, 500);
+                });
+            },
+            methods: {
+                loadL: function () {
+                    _self = this;
+                    var obj = [{
+                        checkbox: true,             //是否显示复选框
+                        visible: true
+                    }, {
+                        field: 'MenuId',
+                        title: 'Id',
+                        visible: false
+                    }, {
+                        field: 'MenuOption',
+                        title: '操作',
+                        align: 'center',
+                        sortable: false,
+                        formatter: function (value, row, index) {
+                            if ($('#btn_showL').length > 0) {
+                                return ['<button id="addDetailL" type="button" class="btn btn-link" >添加明细</button>'].join('');
+                            }
+                        },
+                        events: {
+                            'click #addDetailL': function (e, value, row, index) {
+                                app.addDetailL(row.MenuId);
+                            }
+                        },
+                    }, {
+                        field: 'MenuName',
+                        title: '菜单名称',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'MenuIcon',
+                        title: '图标',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            if (value != '') {
+                                return '<i class="' + value + '"></i>';
+                            } else {
+                                return '';
+                            }
+                        }
+                    }, {
+                        field: 'Status',
+                        title: '是否启用',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            switch (value) {
+                                case 0:
+                                    return '<span class="label label-danger radius">禁用</span>';
+                                case 1:
+                                    return '<span class="label label-success radius">启用</span>';
+                                default:
+                                    return '<span class="label label-warning radius">-</span>';
+                            }
+                        }
+                    }, {
+                        field: 'Sort',
+                        title: '排序值',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'Remark',
+                        title: '备注',
+                        align: 'center'
+                    }, {
+                        field: 'CName',
+                        title: '创建人',
+                        align: 'center',
+                        sortable: true
+                    }, {
+                        field: 'CreateDate',
+                        align: 'center',
+                        title: '创建时间',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }, {
+                        field: 'UName',
+                        align: 'center',
+                        title: '修改人',
+                        sortable: true
+                    }, {
+                        field: 'ModifiedDate',
+                        title: '修改时间',
+                        align: 'center',
+                        sortable: true,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }];
+                    var objSub = [{
+                        checkbox: true,
+                        visible: true
+                    },
+                    {
+                        field: 'MenuId',
+                        title: 'Id',
+                        visible: false
+                    }, {
+                        field: 'MenuOption',
+                        title: '操作',
+                        align: 'center',
+                        sortable: false,
+                        formatter: function (value, row, index) {
+                            var statusVal = value === 1 ? '禁用' : '启用';
+                            var html = [];
+                            if (value != 2) {
+                                if ($('#btn_enableL').length > 0) {
+                                    html.push('<button id="enableDetailL" type="button" class="btn btn-link" >' + statusVal + '</button>');
+                                }
+                                if ($('#btn_editL').length > 0) {
+                                    html.push('<button id="editDetailL" type="button" class="btn btn-link">修改</button>');
+                                }
+                                if ($('#btn_deleteL').length > 0) {
+                                    html.push('<button id="deleteDetailL" type="button" class="btn btn-link">删除</button>');
+                                }
+                            }
+                            return html.join('');
+                        },
+                        events: {
+                            'click #enableDetailL': function (e, value, row, index) {
+                                app.enableDetailL(row.MenuId, row.Status);
+                            },
+                            'click #editDetailL': function (e, value, row, index) {
+                                app.editDetailL(row.MenuId);
+                            },
+                            'click #deleteDetailL': function (e, value, row, index) {
+                                app.deleteDetailL(row.MenuId);
+                            },
+                        },
+                    }, {
+                        field: 'MenuName',
+                        title: '菜单名称',
+                        align: 'center',
+                        sortable: false
+                    }, {
+                        field: 'MenuUrl',
+                        align: 'center',
+                        title: '菜单地址',
+                        sortable: false
+                    }, {
+                        field: 'MenuIcon',
+                        title: '图标',
+                        align: 'center',
+                        sortable: false,
+                        formatter: function (value, row, index) {
+                            if (value != '') {
+                                return '<i class="fa ' + value + '"></i>';
+                            } else {
+                                return '';
+                            }
+                        }
+                    }, {
+                        field: 'Status',
+                        title: '是否启用',
+                        align: 'center',
+                        sortable: false,
+                        formatter: function (value, row, index) {
+                            switch (value) {
+                                case 0:
+                                    return '<span class="label label-danger radius">禁用</span>';
+                                case 1:
+                                    return '<span class="label label-success radius">启用</span>';
+                                default:
+                                    return '<span class="label label-warning radius">-</span>';
+                            }
+                        }
+                    }, {
+                        field: 'Sort',
+                        title: '排序值',
+                        align: 'center',
+                        sortable: false
+                    }, {
+                        field: 'Remark',
+                        title: '备注',
+                        align: 'center'
+                    }, {
+                        field: 'CName',
+                        title: '创建人',
+                        align: 'center',
+                        sortable: false
+                    }, {
+                        field: 'CreateDate',
+                        align: 'center',
+                        title: '创建时间',
+                        sortable: false,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }, {
+                        field: 'UName',
+                        align: 'center',
+                        title: '修改人',
+                        sortable: false
+                    }, {
+                        field: 'ModifiedDate',
+                        title: '修改时间',
+                        align: 'center',
+                        sortable: false,
+                        formatter: function (value, row, index) {
+                            return _self.jsonDateFormat(value);
+                        }
+                    }];
+                    yui.table2("bootstraptable", "/Menu/List", "/Menu/ListDetail", obj, objSub, "POST", "MenuId", "MenuId", true, _self.qParams, "Sort", "asc");
+                },
+                showL: function () {
+                    yui.layershow("添加菜单", "/Menu/Add", 600, 550);
+                },
+                searchL: function () {
+                    $("#bootstraptable").bootstrapTable('refresh');
+                },
+                addDetailL: function (val) {
+                    yui.layershow("菜单明细", "/Menu/Detail?pid=" + val, 600, 500);
+                },
+                editL: function () {
+                    var arr = $("#bootstraptable").bootstrapTable('getSelections');
+                    if (arr.length > 0) {
+                        var index = layer.confirm("您确定要修改吗？", { btn: ["确定", "取消"] }, function () {
+                            layer.close(index);
+                            var id = arr[0].MenuId;
+                            yui.layershow("修改菜单", "/Menu/Add?id=" + id, 600, 550);
+                        }, function () {
+
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                editDetailL: function (val) {
+                    if (val.length > 0) {
+                        var index = layer.confirm("您确定要修改明细吗？", { btn: ["确定", "取消"] }, function () {
+                            layer.close(index);
+                            yui.layershow("修改明细", "/Menu/Detail?id=" + val, 600, 500);
+                        }, function () {
+
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                enableL: function () {
+                    var _self = this;
+                    var arr = $("#bootstraptable").bootstrapTable('getSelections');
+                    if (arr.length > 0) {
+                        var value = arr[0].Status;
+                        var content = value === 1 ? "禁用" : "启用";
+
+                        var index = layer.confirm("您确定要" + content + "吗？", { btn: ["确定", "取消"] }, function () {
+                            var id = arr[0].MenuId;
+                            axios.get('/Menu/Enable?id=' + id + "&type=" + value)
+                                .then(function (response) {
+                                    if (response.data.Item1) {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 1 });
+                                        _self.searchL();
+                                    } else {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 5 });
+                                    }
+                                })
+                                .catch(function (error) {
+                                    layer.msg(error.message, { icon: 5 });
+                                });
+                            layer.close(index);
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                enableDetailL: function (id, status) {
+                    if (id.length > 0) {
+                        var content = status === 1 ? "禁用" : "启用";
+                        var index = layer.confirm("您确定要" + content + "吗？", { btn: ["确定", "取消"] }, function () {
+                            yui.$axiosget('/Menu/Enable?id=' + id + "&type=" + status)
+                                .then(function (response) {
+                                    if (response.data.Item1) {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 1 });
+                                        _self.searchL();
+                                    } else {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 5 });
+                                    }
+                                })
+                                .catch(function (error) {
+                                    layer.msg(error.message, { icon: 5 });
+                                });
+                            layer.close(index);
+                        }, function () {
+
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                deleteL: function () {
+                    _self = this;
+                    var arr = $("#bootstraptable").bootstrapTable('getSelections');
+                    if (arr.length > 0) {
+                        var index = layer.confirm("您确定要删除吗？", { btn: ["确定", "取消"] }, function () {
+                            var id = arr[0].MenuId;
+                            yui.$axiosget('/Menu/Delete?id=' + id)
+                                .then(function (response) {
+                                    if (response.data.Item1) {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 1 });
+                                        _self.searchL();
+                                    } else {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 5 });
+                                    }
+                                })
+                                .catch(function (error) {
+                                    layer.msg(error.message, { icon: 5 });
+                                });
+                            layer.close(index);
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                },
+                deleteDetailL: function (val) {
+                    if (val.length > 0) {
+                        var index = layer.confirm("您确定要删除明细吗？", { btn: ["确定", "取消"] }, function () {
+                            yui.$axiosget('/Menu/DeleteDetail?id=' + val)
+                                .then(function (response) {
+                                    if (response.data.Item1) {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 1 });
+                                        _self.searchL();
+                                    } else {
+                                        layer.msg(response.data.Item2 || errorMsg, { icon: 5 });
+                                    }
+                                })
+                                .catch(function (error) {
+                                    layer.msg(error.message, { icon: 5 });
+                                });
+                            layer.close(index);
+                        }, function () {
+
+                        });
+                    } else {
+                        layer.alert("请选中行", { icoon: 3, skin: "layer-ext-moon" });
+                    }
+                }
+            }
+        });
+    </script>
+}
